@@ -27,7 +27,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, LPWSTR, int nCmdShow)
 
 	HWND hwnd = CreateWindowEx(
 		0, CLASS_NAME, L"Shutdown Blocker",
-		WS_OVERLAPPEDWINDOW,
+		WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
 		CW_USEDEFAULT, CW_USEDEFAULT, 300, 200,
 		nullptr, nullptr, hInstance, nullptr);
 
